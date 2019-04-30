@@ -52,26 +52,24 @@ notebook/pc:
 .hlavni-recept {
     background-image: url( images/burger.jpg );
     background-size: cover;
+    background-position: center;
     max-width: 100%;
     min-height: 200px;
     margin-bottom: 1px;  
     padding: 10px;
-    position: relative;
  }
 
 .recept-meta {
     font-size: 14px;
     font-weight: 400;
-    position: relative;
 }
 
 .recept-kategorie {
     float: left;
- }
+}
 
 .recept-komentare {
     float: right; 
-    position: relative;
  }
 
 .recept-nazev1 {
@@ -79,49 +77,38 @@ notebook/pc:
     font-weight: 800;
     font-size: 28px;
     position:relative;
-}
-
+ }
 
 .sloupec {
     display: flex;
     flex-direction: column;
 }
 
-.recept.recept2 {
-    background-image: url( images/sushi.jpg );
+.recept.recept2,
+.recept.recept3,
+.recept.recept4,
+.recept.recept5 {
     background-size: cover;
+    background-position: center;
     min-height: 90px;
     margin-bottom: 1px;  
     padding: 10px;
 }
 
-.recept-nazev {
-    font-size: 18px;
-    margin-top: 48px;
+.recept.recept2 {
+    background-image: url( images/sushi.jpg ); 
 }
 
 .recept.recept3 {
     background-image: url( images/rajcata.jpg );
-    background-size: cover;
-    min-height: 90px;
-    margin-bottom: 1px;  
-    padding: 10px;
 }
 
 .recept.recept4 {
     background-image: url( images/kure.jpg );
-    background-size: cover;
-    min-height: 90px;
-    margin-bottom: 1px;  
-    padding: 10px;
 }
 
 .recept.recept5 {
-    background-image: url( images/grilovani.jpg );
-    background-size: cover;
-    min-height: 90px;
-    margin-bottom: 1px;  
-    padding: 10px;
+    background-image: url( images/grilovani.jpg );   
 }
 
 .recept-nazev {
@@ -129,20 +116,18 @@ notebook/pc:
     margin-top: 48px;
 }
 
+
 @media ( min-width: 480px ) {
    .doporucujeme {
-       flex-direction: column;
         justify-content: flex-start;
         align-items: stretch;
    }
    
     .hlavni-recept {
-        min-height: 250px;
-        
+        min-height: 250px;  
     }
 
     .sloupec {
-        display: flex;
         flex-direction: row; 
         width: 50%;
     } 
@@ -153,8 +138,7 @@ notebook/pc:
     .recept.recept5 {
         min-height: 150px;
         margin: 1px 1px 1px;
-        min-width: 100%;
-        
+        min-width: 100%;  
     }
 
     .recept-nazev1 {
@@ -177,13 +161,10 @@ notebook/pc:
 
     .hlavni-recept {
         min-height: 400px;
-        min-width: 33%;
-        
+        min-width: 33%; 
     }
 
     .sloupec {
-        display: flex;
-        flex-direction:row;
         justify-content: right;
         flex-wrap: wrap;
         margin: 1px;
